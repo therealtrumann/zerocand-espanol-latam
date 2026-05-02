@@ -1,0 +1,122 @@
+/**
+ * Florah Viva — Design Tokens
+ * Produto: Protocolo Cero Candidiasis
+ * Fonte: zerocand.lovable.app
+ *
+ * Uso: copiar para globals.css ou theme.css do projeto ES-LATAM
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+:root {
+  /* === CORES BASE === */
+  --background:            332 100% 99%;   /* #FFF5F8 — branco rosado */
+  --foreground:            330 8%   40%;   /* #6B5B60 — texto principal */
+
+  /* === COMPONENTES === */
+  --card:                  0   0%   100%;  /* branco puro */
+  --card-foreground:       330 8%   40%;
+  --popover:               0   0%   100%;
+  --popover-foreground:    330 8%   40%;
+
+  /* === COR PRINCIPAL === */
+  --primary:               326 42%  55%;   /* #C27098 — Rosa Malva */
+  --primary-foreground:    0   0%   100%;  /* branco */
+
+  /* === COR SECUNDÁRIA === */
+  --secondary:             332 44%  92%;   /* #F5E0E8 — Rosa claro */
+  --secondary-foreground:  330 8%   40%;
+
+  /* === NEUTROS === */
+  --muted:                 332 44%  92%;
+  --muted-foreground:      330 8%   60%;   /* texto secundário */
+
+  /* === ACENTO === */
+  --accent:                290 20%  78%;   /* #C4A8CC — Roxo suave */
+  --accent-foreground:     330 8%   40%;
+
+  /* === SUCESSO / VERDE === */
+  --success:               145 40%  85%;   /* #BFE0CC — Verde banner */
+  --success-foreground:    145 50%  30%;   /* #2D7349 — Texto verde */
+
+  /* === DESTRUTIVO === */
+  --destructive:           0   84.2% 60.2%;
+  --destructive-foreground:0   0%   100%;
+
+  /* === SISTEMA === */
+  --border:                332 44%  92%;
+  --input:                 332 44%  92%;
+  --ring:                  326 42%  55%;   /* igual ao primary */
+  --radius:                1rem;           /* 16px */
+
+  /* === TONS CUSTOMIZADOS FLORAH VIVA === */
+  --rose-pale:             332 60%  94%;   /* #FAE6EE */
+  --rose-medium:           332 44%  81%;   /* #E8BFCF */
+  --rose-burnt:            15  45%  60%;   /* #C47A5A */
+  --beige-warm:            30  25%  94%;   /* #F5EDE4 */
+  --violet-soft:           290 20%  78%;   /* #C4A8CC */
+  --green-natural:         145 40%  85%;   /* #BFE0CC */
+}
+
+/* === BASE === */
+body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-family: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  line-height: 1.5;
+}
+
+/* === TIPOGRAFIA === */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 700;
+  color: hsl(var(--foreground));
+}
+
+/* === UTILITÁRIOS DE COR === */
+.bg-primary        { background-color: hsl(var(--primary)); }
+.bg-secondary      { background-color: hsl(var(--secondary)); }
+.bg-green-natural  { background-color: hsl(var(--green-natural)); }
+.bg-rose-pale      { background-color: hsl(var(--rose-pale)); }
+.bg-beige-warm     { background-color: hsl(var(--beige-warm)); }
+
+.text-primary      { color: hsl(var(--primary)); }
+.text-success      { color: hsl(var(--success-foreground)); }
+.text-muted        { color: hsl(var(--muted-foreground)); }
+
+/* === BOTÃO PRINCIPAL === */
+.btn-primary {
+  background-color: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  border-radius: var(--radius);
+  padding: 0.75rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+/* === CARD === */
+.card {
+  background-color: hsl(var(--card));
+  border-radius: calc(var(--radius) * 1.5); /* 24px */
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  padding: 2rem;
+}
+
+/* === BADGE DE DESTAQUE === */
+.badge-top {
+  background-color: hsl(var(--green-natural));
+  color: hsl(var(--success-foreground));
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  text-align: center;
+  padding: 0.75rem 1rem;
+  width: 100%;
+}
