@@ -123,18 +123,14 @@ a { text-decoration: none; }
   display: flex;
   justify-content: center;
 }
-.hero-image-placeholder {
+.hero-image {
   width: 100%;
-  max-width: 420px;
-  aspect-ratio: 4/3;
-  background: linear-gradient(135deg, var(--rose-pale), var(--secondary), var(--violet-soft));
+  max-width: 480px;
   border-radius: calc(var(--radius) * 2);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 20px 60px rgba(194, 112, 152, 0.25);
+  box-shadow: 0 20px 60px rgba(194, 112, 152, 0.30);
+  object-fit: cover;
+  display: block;
 }
-.hero-flower { font-size: 5rem; }
 
 /* === BOTÕES === */
 .btn-primary {
