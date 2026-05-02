@@ -8,10 +8,18 @@
   <meta property="og:title" content="Protocolo Cero Candidiasis | Florah Viva" />
   <meta property="og:description" content="Elimina la candidiasis recurrente con un protocolo simple, natural y accesible." />
   <meta property="og:type" content="website" />
+
+  <!-- Preload hero image (LCP) -->
+  <link rel="preload" href="lavanda.webp" as="image" type="image/webp" fetchpriority="high">
+
+  <!-- Fonts: preconnect + async load -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet"></noscript>
+
   <link rel="stylesheet" href="style.css">
+
   <!-- Meta Pixel Code -->
   <script>
   !function(f,b,e,v,n,t,s)
@@ -32,37 +40,100 @@
 </head>
 <body>
 
+  <!-- STICKY CTA (mobile) -->
+  <div class="sticky-cta" id="stickyCta">
+    <a href="https://pay.hotmart.com/Y105646060A?off=ls7ynu7n" target="_blank" class="sticky-cta-btn">
+      Quiero el Protocolo — Solo $9 →
+    </a>
+  </div>
+
+  <!-- SOCIAL PROOF POPUP -->
+  <div class="proof-popup" id="proofPopup">
+    <span class="proof-icon">🌸</span>
+    <div>
+      <strong id="proofName">Valentina de México</strong>
+      <p>acaba de acceder al Protocolo</p>
+    </div>
+  </div>
+
   <!-- BANNER TOPO -->
   <div class="banner-top">
+    <span class="banner-dot"></span>
     Exclusivo para mujeres que sufren de candidiasis recurrente
+    <span class="banner-dot"></span>
   </div>
 
   <!-- HERO -->
   <section class="hero">
+    <div class="hero-blob hero-blob-1"></div>
+    <div class="hero-blob hero-blob-2"></div>
     <div class="container hero-inner">
-      <div class="hero-text">
-        <h1>Elimina la candidiasis recurrente con un protocolo simple, natural y accesible — en solo 7 días.</h1>
-        <p class="hero-sub">Descubre el método seguro y comprobado que ya ayudó a miles de mujeres a romper el ciclo de la candidiasis repetitiva.</p>
+      <div class="hero-text fade-in">
+        <div class="hero-tag">✨ Método 100% natural</div>
+        <h1>Elimina la candidiasis recurrente con un protocolo simple, natural y accesible — <em>en solo 7 días.</em></h1>
+        <p class="hero-sub">Descubre el método seguro y comprobado que ya ayudó a más de <strong>12.000 mujeres</strong> a romper el ciclo de la candidiasis repetitiva.</p>
+
+        <!-- Social proof row -->
+        <div class="hero-social-row">
+          <div class="avatar-stack">
+            <div class="avatar av1">A</div>
+            <div class="avatar av2">M</div>
+            <div class="avatar av3">J</div>
+            <div class="avatar av4">C</div>
+          </div>
+          <div class="hero-social-text">
+            <div class="stars-sm">★★★★★</div>
+            <span>+<span class="counter" data-target="12847">0</span> mujeres aliviadas</span>
+          </div>
+        </div>
+
         <div class="hero-cta-group">
-          <a href="https://pay.hotmart.com/Y105646060A?off=ls7ynu7n" target="_blank" class="btn-primary">Quiero el Protocolo Cero Candidiasis</a>
+          <a href="https://pay.hotmart.com/Y105646060A?off=ls7ynu7n" target="_blank" class="btn-primary btn-pulse">
+            Quiero el Protocolo Cero Candidiasis
+          </a>
           <div class="hero-price-badge">
-            <span class="price-label">Acceso inmediato hoy</span>
+            <span class="price-label">⚡ Acceso inmediato hoy</span>
             <span class="price-value">Solo $9</span>
+          </div>
+          <div class="hero-trust-row">
+            <span>🔒 Pago seguro</span>
+            <span>📱 Acceso inmediato</span>
+            <span>♾️ De por vida</span>
           </div>
         </div>
       </div>
-      <div class="hero-image-wrap">
-        <img src="lavanda.webp" alt="Lavanda natural — Florah Viva" class="hero-image" />
+
+      <div class="hero-image-wrap fade-in fade-delay">
+        <div class="hero-image-frame">
+          <img src="lavanda.webp" alt="Lavanda natural — Florah Viva" class="hero-image" width="480" height="360" fetchpriority="high">
+          <div class="hero-image-badge">
+            <span class="badge-icon">🌿</span>
+            <span>100% natural</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
+  <!-- TRUST STRIP -->
+  <div class="trust-strip">
+    <div class="container trust-inner">
+      <div class="trust-item"><span>🔒</span><span>Compra 100% segura</span></div>
+      <div class="trust-item"><span>⚡</span><span>Acceso inmediato</span></div>
+      <div class="trust-item"><span>🌿</span><span>100% natural</span></div>
+      <div class="trust-item"><span>♾️</span><span>Acceso de por vida</span></div>
+      <div class="trust-item"><span>👁️</span><span>100% discreto</span></div>
+    </div>
+  </div>
+
   <!-- VERDAD -->
-  <section class="section section-secondary">
+  <section class="section section-secondary" id="verdad">
     <div class="container">
-      <h2 class="section-title">La verdad sobre la candidiasis recurrente<br>que nunca te dijeron</h2>
-      <div class="pain-grid">
+      <div class="section-label">El problema real</div>
+      <h2 class="section-title">La verdad sobre la candidiasis recurrente<br class="hide-mobile"> que <em>nunca</em> te dijeron</h2>
+      <div class="pain-grid reveal">
         <div class="pain-card pain-red">
+          <div class="pain-icon">😔</div>
           <h3>El Dolor que Conoces</h3>
           <ul>
             <li>Picazón, ardor y flujo que vuelven sin explicación</li>
@@ -72,6 +143,7 @@
           </ul>
         </div>
         <div class="pain-card pain-orange">
+          <div class="pain-icon">⚠️</div>
           <h3>El Peligro de No Actuar</h3>
           <ul>
             <li>La flora vaginal se desequilibra aún más</li>
@@ -82,38 +154,49 @@
           </ul>
         </div>
         <div class="pain-card pain-green">
+          <div class="pain-icon">💚</div>
           <h3>La Solución Accesible</h3>
-          <p>Existe una solución simple, natural y accesible — y puedes empezar hoy por solo $9.</p>
-          <a href="https://pay.hotmart.com/Y105646060A?off=ls7ynu7n" target="_blank" class="btn-primary btn-sm">Quiero mi solución ahora</a>
+          <p>Existe una solución simple, natural y accesible — y puedes empezar hoy mismo.</p>
+          <a href="https://pay.hotmart.com/Y105646060A?off=ls7ynu7n" target="_blank" class="btn-primary btn-sm">Quiero mi solución ahora →</a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- DEPOIMENTOS -->
-  <section class="section">
+  <section class="section" id="testimonios">
     <div class="container">
+      <div class="section-label">Testimonios reales</div>
       <h2 class="section-title">Resultados reales de mujeres reales</h2>
-      <div class="testimonials-grid">
+      <p class="section-sub">Sin filtros. Sin actores. Solo mujeres como tú.</p>
+      <div class="testimonials-grid reveal">
         <div class="testimonial-card">
+          <div class="t-avatar av1">A</div>
           <div class="stars">★★★★★</div>
           <p>"En 3 días, la picazón desapareció. En 7 días ya no tenía síntomas."</p>
-          <strong>— Ana Paula</strong>
+          <strong>Ana Paula</strong>
+          <span class="t-location">📍 Ciudad de México</span>
         </div>
         <div class="testimonial-card">
+          <div class="t-avatar av2">M</div>
           <div class="stars">★★★★★</div>
           <p>"Tenía candidiasis todos los meses. Ya llevo 2 meses sin ningún episodio."</p>
-          <strong>— Mariana S.</strong>
+          <strong>Mariana S.</strong>
+          <span class="t-location">📍 Bogotá</span>
         </div>
         <div class="testimonial-card">
+          <div class="t-avatar av3">J</div>
           <div class="stars">★★★★★</div>
           <p>"Era recurrente. Ahora entendí la causa real y dejé de sufrir."</p>
-          <strong>— Juliana R.</strong>
+          <strong>Juliana R.</strong>
+          <span class="t-location">📍 Lima</span>
         </div>
         <div class="testimonial-card">
+          <div class="t-avatar av4">C</div>
           <div class="stars">★★★★★</div>
           <p>"Nunca nadie me lo explicó tan claro. Sentí que me hablaban a mí."</p>
-          <strong>— Camila L.</strong>
+          <strong>Camila L.</strong>
+          <span class="t-location">📍 Buenos Aires</span>
         </div>
       </div>
     </div>
@@ -122,51 +205,101 @@
   <!-- ETAPAS -->
   <section class="section section-secondary">
     <div class="container">
+      <div class="section-label">Tu camino de recuperación</div>
       <h2 class="section-title">Lo que vas a aprender y transformar</h2>
-      <div class="steps-grid">
+      <div class="steps-track reveal">
+        <div class="steps-line"></div>
         <div class="step-card">
+          <div class="step-num">1</div>
           <div class="step-badge">24–48 horas</div>
-          <h3>Etapa 1 — Alivio rápido</h3>
+          <h3>Alivio rápido</h3>
           <ul>
             <li>Reducción inmediata de síntomas</li>
             <li>Protocolo de emergencia</li>
           </ul>
         </div>
+        <div class="step-arrow">→</div>
         <div class="step-card">
+          <div class="step-num">2</div>
           <div class="step-badge">7 días</div>
-          <h3>Etapa 2 — Protocolo de 7 días</h3>
+          <h3>Protocolo de 7 días</h3>
           <ul>
             <li>Paso a paso diario</li>
             <li>Lista antifúngica</li>
             <li>Guía sencilla</li>
           </ul>
         </div>
-        <div class="step-card">
+        <div class="step-arrow">→</div>
+        <div class="step-card step-final">
+          <div class="step-num">3</div>
           <div class="step-badge">30 días</div>
-          <h3>Etapa 3 — Protocolo de 30 días</h3>
+          <h3>Protocolo de 30 días</h3>
           <ul>
             <li>Reconstrucción de la flora</li>
             <li>Prevención definitiva</li>
-            <li>Regreso al equilibrio íntimo</li>
+            <li>Equilibrio íntimo permanente</li>
           </ul>
         </div>
       </div>
-      <p class="section-tagline">Tu transformación completa</p>
+      <div class="steps-result reveal">
+        <span class="steps-result-icon">🌸</span>
+        <p>Tu transformación completa — sin más episodios, sin más vergüenza.</p>
+      </div>
     </div>
   </section>
 
   <!-- MÓDULOS -->
   <section class="section">
     <div class="container">
+      <div class="section-label">Contenido completo</div>
       <h2 class="section-title">Cómo recibirás el Protocolo</h2>
       <p class="section-sub">6 módulos completos con todo lo que necesitas para eliminar la candidiasis de una vez por todas</p>
-      <div class="modules-grid">
-        <div class="module-card"><span class="module-num">01</span><p>Emergencia Anti-Episodio</p></div>
-        <div class="module-card"><span class="module-num">02</span><p>Protocolo 7 Días</p></div>
-        <div class="module-card"><span class="module-num">03</span><p>Reconstrucción de la Flora</p></div>
-        <div class="module-card"><span class="module-num">04</span><p>Higiene Íntima Segura</p></div>
-        <div class="module-card"><span class="module-num">05</span><p>Alimentación Antifúngica</p></div>
-        <div class="module-card"><span class="module-num">06</span><p>Rutina Femenina Anti-Recurrencia</p></div>
+      <div class="modules-grid reveal">
+        <div class="module-card">
+          <span class="module-num">01</span>
+          <div>
+            <p class="module-title">Emergencia Anti-Episodio</p>
+            <p class="module-desc">Alivio en 24–48h</p>
+          </div>
+        </div>
+        <div class="module-card">
+          <span class="module-num">02</span>
+          <div>
+            <p class="module-title">Protocolo 7 Días</p>
+            <p class="module-desc">Eliminación completa</p>
+          </div>
+        </div>
+        <div class="module-card">
+          <span class="module-num">03</span>
+          <div>
+            <p class="module-title">Reconstrucción de la Flora</p>
+            <p class="module-desc">Equilibrio vaginal</p>
+          </div>
+        </div>
+        <div class="module-card">
+          <span class="module-num">04</span>
+          <div>
+            <p class="module-title">Higiene Íntima Segura</p>
+            <p class="module-desc">Sin irritantes</p>
+          </div>
+        </div>
+        <div class="module-card">
+          <span class="module-num">05</span>
+          <div>
+            <p class="module-title">Alimentación Antifúngica</p>
+            <p class="module-desc">Dieta que previene</p>
+          </div>
+        </div>
+        <div class="module-card">
+          <span class="module-num">06</span>
+          <div>
+            <p class="module-title">Rutina Anti-Recurrencia</p>
+            <p class="module-desc">Prevención definitiva</p>
+          </div>
+        </div>
+      </div>
+      <div class="modules-cta reveal">
+        <a href="https://pay.hotmart.com/Y105646060A?off=ls7ynu7n" target="_blank" class="btn-primary">Quiero todos los módulos por $9 →</a>
       </div>
     </div>
   </section>
@@ -175,24 +308,30 @@
   <section class="section section-secondary">
     <div class="container">
       <h2 class="section-title">Para quién es — y para quién no es</h2>
-      <div class="audience-grid">
+      <div class="audience-grid reveal">
         <div class="audience-card audience-yes">
-          <h3>✅ Para quién es:</h3>
+          <div class="audience-header">
+            <span class="audience-icon">✅</span>
+            <h3>Esto es para ti si…</h3>
+          </div>
           <ul>
-            <li>Mujeres con episodios frecuentes</li>
-            <li>Quienes sufren ardor, picazón y flujo vaginal</li>
-            <li>Las que están hartas de medicamentos</li>
-            <li>Quienes quieren entender su cuerpo</li>
-            <li>Las que buscan una solución natural</li>
+            <li>Tienes episodios de candidiasis frecuentes</li>
+            <li>Sufres ardor, picazón o flujo recurrente</li>
+            <li>Estás harta de medicamentos que no resuelven</li>
+            <li>Quieres entender qué le pasa a tu cuerpo</li>
+            <li>Buscas una solución natural y definitiva</li>
           </ul>
         </div>
         <div class="audience-card audience-no">
-          <h3>❌ No es para quien:</h3>
+          <div class="audience-header">
+            <span class="audience-icon">❌</span>
+            <h3>No es para ti si…</h3>
+          </div>
           <ul>
-            <li>No quiere seguir el protocolo</li>
-            <li>Busca una 'cura mágica instantánea'</li>
-            <li>Solo quiere tratar el síntoma</li>
-            <li>No desea cambiar sus hábitos</li>
+            <li>No quieres seguir el protocolo</li>
+            <li>Buscas una 'cura mágica instantánea'</li>
+            <li>Solo quieres tratar el síntoma</li>
+            <li>No deseas cambiar ningún hábito</li>
           </ul>
         </div>
       </div>
@@ -200,31 +339,57 @@
   </section>
 
   <!-- PRECIOS -->
-  <section class="section" id="offer-section">
+  <section class="section offer-section" id="offer-section">
+    <div class="offer-blob"></div>
     <div class="container">
-      <h2 class="section-title">Invierte en tu salud y bienestar</h2>
-      <p class="section-sub">Acceso completo a todo el protocolo por un único pago</p>
-      <div class="pricing-single-wrap">
+      <div class="section-label section-label-white">Oferta especial</div>
+      <h2 class="section-title section-title-white">Invierte en tu salud y bienestar</h2>
+      <p class="section-sub section-sub-white">Acceso completo a todo el protocolo por un único pago</p>
+      <div class="pricing-single-wrap reveal">
         <div class="pricing-card pricing-featured pricing-single">
-          <div class="pricing-badge">ACCESO COMPLETO</div>
+          <div class="pricing-badge">✨ ACCESO COMPLETO</div>
           <h3>Protocolo Cero Candidiasis</h3>
           <ul class="pricing-features">
-            <li>✓ Protocolo de Emergencia (24–48h)</li>
-            <li>✓ Protocolo Cero (7 Días)</li>
-            <li>✓ Protocolo de Reconstrucción (30 Días)</li>
-            <li>✓ Guía de Higiene Íntima</li>
-            <li>✓ Guía de Alimentación Antifúngica</li>
-            <li>✓ Lista de los 5 errores que causan recurrencia</li>
-            <li>✓ Acceso de por vida</li>
-            <li>✓ Actualizaciones gratuitas</li>
-            <li>✓ Área de miembros exclusiva</li>
+            <li><span class="check">✓</span> Protocolo de Emergencia (24–48h)</li>
+            <li><span class="check">✓</span> Protocolo Cero (7 Días)</li>
+            <li><span class="check">✓</span> Protocolo de Reconstrucción (30 Días)</li>
+            <li><span class="check">✓</span> Guía de Higiene Íntima</li>
+            <li><span class="check">✓</span> Guía de Alimentación Antifúngica</li>
+            <li><span class="check">✓</span> Lista de los 5 errores que causan recurrencia</li>
+            <li><span class="check">✓</span> Acceso de por vida</li>
+            <li><span class="check">✓</span> Actualizaciones gratuitas</li>
+            <li><span class="check">✓</span> Área de miembros exclusiva</li>
           </ul>
-          <div class="pricing-old">Antes: $97</div>
-          <div class="pricing-price pricing-price-featured">$9</div>
+          <div class="pricing-old">Valor normal: <s>$97</s></div>
+          <div class="pricing-price-wrap">
+            <div class="pricing-price">$9</div>
+            <div class="pricing-discount">-91%</div>
+          </div>
           <p class="pricing-note">Pago único • Acceso inmediato y de por vida</p>
-          <a href="https://pay.hotmart.com/Y105646060A?off=ls7ynu7n" target="_blank" class="btn-primary btn-lg">Quiero el acceso completo ahora</a>
-          <p class="pricing-secure">🔒 Compra 100% segura y discreta</p>
+          <a href="https://pay.hotmart.com/Y105646060A?off=ls7ynu7n" target="_blank" class="btn-primary btn-lg btn-pulse">
+            Quiero el acceso completo ahora
+          </a>
+          <div class="pricing-trust">
+            <span>🔒 SSL seguro</span>
+            <span>📱 Acceso inmediato</span>
+            <span>🔒 100% discreto</span>
+          </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GARANTIA -->
+  <section class="section guarantee-section">
+    <div class="container guarantee-inner reveal">
+      <div class="guarantee-seal">
+        <div class="seal-ring">
+          <span class="seal-icon">🛡️</span>
+        </div>
+      </div>
+      <div class="guarantee-text">
+        <h3>Satisfacción garantizada</h3>
+        <p>Si sigues el protocolo y no obtienes resultados, te devolvemos tu dinero. Tu bienestar es nuestra prioridad — sin preguntas, sin complicaciones.</p>
       </div>
     </div>
   </section>
@@ -232,64 +397,78 @@
   <!-- COSTO DE LA INERCIA -->
   <section class="section section-secondary">
     <div class="container">
+      <div class="section-label">¿Cuánto te cuesta esperar?</div>
       <h2 class="section-title">¿Cuánto te cuesta vivir con candidiasis recurrente?</h2>
-      <div class="cost-grid">
+      <div class="cost-grid reveal">
         <div class="cost-card">
+          <div class="cost-icon">💸</div>
           <h3>Costos Económicos</h3>
           <div class="cost-amount">$200+</div>
           <p>Por episodio, por mes, por año...</p>
-          <div class="cost-amount-sm">$40–80 · $30–50</div>
+          <div class="cost-breakdown">
+            <span>Medicamentos</span>
+            <span>Consultas</span>
+            <span>Productos</span>
+          </div>
         </div>
         <div class="cost-card">
+          <div class="cost-icon">💔</div>
           <h3>Costos Emocionales</h3>
-          <div class="cost-amount">Incalculable</div>
+          <div class="cost-amount cost-amount-purple">Incalculable</div>
           <ul>
-            <li>Inseguridad constante</li>
-            <li>Estrés y ansiedad</li>
-            <li>Impacto en tu autoestima</li>
+            <li>😔 Inseguridad constante</li>
+            <li>😰 Estrés y ansiedad</li>
+            <li>😞 Impacto en tu autoestima</li>
           </ul>
         </div>
       </div>
-      <div class="cost-cta-block">
-        <p class="cost-but">Pero hoy, puedes iniciar tu recuperación por solo <strong>$9</strong></p>
-        <div class="cost-comparisons">
-          <span>Menos que un jabón íntimo.</span>
-          <span>Menos que un café.</span>
-          <span>Menos que una empanada.</span>
+      <div class="cost-vs reveal">
+        <div class="cost-vs-left">
+          <p>Seguir gastando <strong>$200/mes</strong></p>
+          <p class="cost-vs-or">vs.</p>
         </div>
-        <a href="https://pay.hotmart.com/Y105646060A?off=ls7ynu7n" target="_blank" class="btn-primary">Quiero iniciar mi recuperación</a>
+        <div class="cost-vs-right">
+          <p>Resolver de raíz por <strong class="highlight-price">$9</strong></p>
+          <div class="cost-comparisons">
+            <span>☕ Menos que un café</span>
+            <span>🧼 Menos que un jabón íntimo</span>
+            <span>🫓 Menos que una empanada</span>
+          </div>
+        </div>
+      </div>
+      <div class="cost-cta reveal">
+        <a href="https://pay.hotmart.com/Y105646060A?off=ls7ynu7n" target="_blank" class="btn-primary btn-lg">Quiero iniciar mi recuperación →</a>
       </div>
     </div>
   </section>
 
   <!-- URGENCIA -->
   <section class="section urgency-section">
-    <div class="container urgency-inner">
-      <div>
-        <p class="urgency-lead">Puedes seguir esperando el próximo episodio…</p>
-        <p class="urgency-lead urgency-or">o puedes evitar que vuelva.</p>
-        <p class="urgency-sub">Si no actúas ahora, el malestar continuará:</p>
-        <ul class="urgency-list">
-          <li>La picazón y el ardor van a volver</li>
-          <li>Los medicamentos van a dejar de funcionar</li>
-          <li>Tu autoestima va a seguir por el piso</li>
-          <li>Vas a seguir sintiéndote sola en esta lucha</li>
-          <li>El ciclo se va a repetir, mes tras mes</li>
-        </ul>
-        <p class="urgency-closing">Es hora de recuperar tu paz, tu comodidad y tu salud íntima.</p>
-        <a href="https://pay.hotmart.com/Y105646060A?off=ls7ynu7n" target="_blank" class="btn-white">Quiero cambiar esto hoy</a>
-      </div>
+    <div class="urgency-bg-pattern"></div>
+    <div class="container urgency-inner reveal">
+      <p class="urgency-lead">Puedes seguir esperando el próximo episodio…</p>
+      <p class="urgency-lead urgency-or">o puedes evitar que vuelva.</p>
+      <div class="urgency-divider"></div>
+      <p class="urgency-sub">Si no actúas ahora, el malestar continuará:</p>
+      <ul class="urgency-list">
+        <li>La picazón y el ardor van a volver</li>
+        <li>Los medicamentos van a dejar de funcionar</li>
+        <li>Tu autoestima va a seguir por el piso</li>
+        <li>Vas a seguir sintiéndote sola en esta lucha</li>
+        <li>El ciclo se va a repetir, mes tras mes</li>
+      </ul>
+      <p class="urgency-closing">Es hora de recuperar tu paz, tu comodidad y tu salud íntima.</p>
+      <a href="https://pay.hotmart.com/Y105646060A?off=ls7ynu7n" target="_blank" class="btn-white btn-pulse">Quiero cambiar esto hoy — $9</a>
     </div>
   </section>
 
   <!-- MARCA -->
   <section class="section">
-    <div class="container brand-section">
-      <div class="brand-logo">🌸</div>
+    <div class="container brand-section reveal">
+      <img src="lavanda.webp" alt="Florah Viva" class="brand-image" loading="lazy" width="120" height="120">
       <h2 class="brand-name">Florah Viva</h2>
       <p class="brand-tagline">Cuidado real para tu salud íntima.</p>
       <p class="brand-desc">Florah Viva es una marca especializada en salud íntima femenina. Nuestra misión es ofrecer soluciones naturales, seguras y cercanas para problemas que afectan a millones de mujeres — pero que rara vez son explicados con claridad.</p>
-      <p class="brand-desc">Desarrollamos protocolos y contenidos que restauran el equilibrio íntimo y devuelven el bienestar.</p>
       <div class="brand-pillars">
         <div class="pillar">
           <span class="pillar-icon">🌿</span>
@@ -313,8 +492,9 @@
   <!-- FAQ -->
   <section class="section section-secondary">
     <div class="container">
+      <div class="section-label">Tienes dudas, las resolvemos</div>
       <h2 class="section-title">Preguntas Frecuentes</h2>
-      <div class="faq-list">
+      <div class="faq-list reveal">
         <details class="faq-item">
           <summary>¿En cuánto tiempo veo resultados?</summary>
           <p>La mayoría de las mujeres reporta alivio de síntomas en las primeras 24-48 horas siguiendo el protocolo de emergencia. El protocolo completo de 7 días elimina los síntomas agudos, y el programa de 30 días reconstruye completamente tu flora vaginal.</p>
@@ -349,15 +529,84 @@
 
   <!-- FOOTER CTA -->
   <section class="section footer-cta">
-    <div class="container" style="text-align:center">
-      <a href="https://pay.hotmart.com/Y105646060A?off=ls7ynu7n" target="_blank" class="btn-primary btn-lg">Quiero el Protocolo Cero Candidiasis — Solo $9</a>
-      <p style="margin-top:1rem;color:#fff;opacity:0.8;font-size:0.9rem;">🔒 Compra 100% segura y discreta</p>
+    <div class="container footer-cta-inner">
+      <h2>¿Lista para dejar de sufrir?</h2>
+      <p>Más de 12.000 mujeres ya dieron el primer paso. Hoy es tu turno.</p>
+      <a href="https://pay.hotmart.com/Y105646060A?off=ls7ynu7n" target="_blank" class="btn-white btn-lg btn-pulse">
+        Quiero el Protocolo Cero Candidiasis — Solo $9
+      </a>
+      <p class="footer-secure">🔒 Compra 100% segura y discreta · Acceso inmediato</p>
     </div>
   </section>
 
   <footer class="footer">
-    <p>© 2025 Florah Viva · Todos los derechos reservados</p>
+    <p>© 2025 Florah Viva · Todos los derechos reservados · <a href="https://pay.hotmart.com/Y105646060A?off=ls7ynu7n" target="_blank">Comprar ahora</a></p>
   </footer>
 
+  <script>
+  // === COUNTER ANIMATION ===
+  function animateCounter(el) {
+    const target = +el.dataset.target;
+    const duration = 1800;
+    const step = target / (duration / 16);
+    let current = 0;
+    const timer = setInterval(() => {
+      current = Math.min(current + step, target);
+      el.textContent = Math.floor(current).toLocaleString('es');
+      if (current >= target) clearInterval(timer);
+    }, 16);
+  }
+
+  // === SCROLL REVEAL ===
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('revealed');
+        revealObserver.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12 });
+
+  document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+  // === COUNTER TRIGGER ===
+  const counterObserver = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        animateCounter(e.target);
+        counterObserver.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.5 });
+
+  document.querySelectorAll('.counter').forEach(el => counterObserver.observe(el));
+
+  // === STICKY CTA (show after hero) ===
+  const stickyCta = document.getElementById('stickyCta');
+  const hero = document.querySelector('.hero');
+  const stickyObserver = new IntersectionObserver(([e]) => {
+    stickyCta.classList.toggle('visible', !e.isIntersecting);
+  }, { threshold: 0 });
+  stickyObserver.observe(hero);
+
+  // === SOCIAL PROOF POPUP ===
+  const names = [
+    'Valentina de México','Sofía de Colombia','Isabella de Perú',
+    'Camila de Argentina','Lucía de Chile','Gabriela de Ecuador',
+    'Daniela de Venezuela','Fernanda de Bolivia'
+  ];
+  const popup = document.getElementById('proofPopup');
+  const proofName = document.getElementById('proofName');
+  let popupIndex = 0;
+
+  function showProof() {
+    proofName.textContent = names[popupIndex % names.length];
+    popup.classList.add('show');
+    setTimeout(() => popup.classList.remove('show'), 3500);
+    popupIndex++;
+  }
+
+  setTimeout(() => { showProof(); setInterval(showProof, 9000); }, 5000);
+  </script>
 </body>
 </html>
