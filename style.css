@@ -224,10 +224,11 @@ h1,h2,h3 { font-family: 'Playfair Display', Georgia, serif; font-weight: 700; li
   padding: 1.4rem; box-shadow: var(--shadow-sm);
   border-left: 3px solid var(--rose-pale);
 }
-.t-avatar {
-  width: 44px; height: 44px; border-radius: 50%;
-  display: flex; align-items: center; justify-content: center;
-  font-weight: 700; font-size: 1rem; color: white; margin-bottom: .75rem;
+.t-photo {
+  width: 52px; height: 52px; border-radius: 50%; object-fit: cover;
+  border: 2px solid var(--rose-pale);
+  box-shadow: 0 2px 8px rgba(194,112,152,.25);
+  margin-bottom: .75rem;
 }
 .stars { color: hsl(42,90%,55%); font-size: .9rem; margin-bottom: .5rem; }
 .testimonial-card p { font-size: .9rem; color: var(--muted); font-style: italic; margin-bottom: .6rem; }
